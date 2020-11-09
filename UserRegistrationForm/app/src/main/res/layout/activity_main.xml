@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Registration Form"
+          android:textSize="30sp"
+          android:gravity="center"
+          android:textColor="@color/colorPrimary"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="25dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Roll-number:"
+          android:textSize="20sp"
+          android:layout_margin="5dp"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Enter RollNumber"
+          android:layout_margin="10dp"
+          android:id="@+id/uRoll"
+          android:inputType="number"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Name:"
+          android:textSize="20sp"
+          android:layout_margin="5dp"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Enter name"
+          android:layout_margin="10dp"
+          android:id="@+id/uName"
+          android:inputType="textPersonName"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Email-id:"
+          android:textSize="20sp"
+          android:layout_margin="5dp"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Enter User email"
+          android:layout_margin="10dp"
+          android:id="@+id/uEmail"
+          android:inputType="textEmailAddress"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="PhoneNumber:"
+          android:textSize="20sp"
+          android:layout_margin="5dp"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Enter PhoneNumber"
+          android:layout_margin="10dp"
+          android:id="@+id/uContact"
+          android:inputType="phone"/>
+      <RadioGroup
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:id="@+id/radioGroup"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:layout_gravity="left"
+              android:text="Gender: "
+              android:textSize="20sp"/>
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Male"
+              android:id="@+id/male"
+              />
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Female"
+              android:id="@+id/female"/>
+
+      </RadioGroup>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:layout_margin="5dp"
+          android:text="Branch:"/>
+
+      <Spinner
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:id="@+id/branch"
+          android:entries="@array/branch"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Submit"
+          android:id="@+id/submitButton"
+          android:background="#2B737C"
+          android:layout_margin="10dp"/>
+
+
+
+
+  </LinearLayout>
+  </ScrollView>
+
+</layout>
